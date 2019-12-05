@@ -1,8 +1,12 @@
-const crypto = require("crypto");
+
 const { DataSource } = require("apollo-datasource");
-const { InMemoryLRUCache } = require("apollo-server-caching");
-const Knex = require("knex");
-const knexTinyLogger = require("knex-tiny-logger").default;
+const Sequelize = require('sequelize');
+// if you want to load in config outside constructor
+// const config = require(`${__dirname}/../config/config.js`)[env];
+
+// TODO: use, remove, convert
+// const crypto = require("crypto");
+// const knexTinyLogger = require("knex-tiny-logger").default;
 
 const { DEBUG } = process.env;
 
@@ -14,7 +18,7 @@ class MYSQLDataSource extends DataSource {
 
     this.context;
     this.cache;
-    this.db = Knex(sequelizeConfig);
+    this.db = new Sequelize(sequelizeConfig);
 
     const _this = this;
     // if (!this.db.cache) {
@@ -26,7 +30,7 @@ class MYSQLDataSource extends DataSource {
 
   initialize(config) {
     this.context = config.context;
-    // this.cache = config.cache || new InMemoryLRUCache();
+    this.cache = config.cache || new InMemoryLRUCache();
 
     // if (DEBUG && !hasLogger) {
     //   hasLogger = true; // Prevent duplicate loggers
