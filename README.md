@@ -20,7 +20,7 @@ Read more below about getting set up and customizing the cache controls.
 
 ### Installation
 
-To install SQLDataSource: `npm i datasource-sql`
+To install SQLDataSource: `npm i datasource-sqlize`
 
 ### Usage
 

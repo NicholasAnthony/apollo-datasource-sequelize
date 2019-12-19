@@ -1,5 +1,5 @@
 {
-  "name": "datasource-sql-sequelize",
+  "name": "datasource-sqlize",
   "version": "1.0.2",
   "description": "SQL DataSource with Sequelize for Apollo GraphQL projects",
   "main": "index.js",
