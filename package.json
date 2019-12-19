@@ -1,7 +1,7 @@
 {
-  "name": "datasource-sql",
+  "name": "datasource-sql-sequelize",
   "version": "1.0.2",
-  "description": "SQL DataSource for Apollo GraphQL projects",
+  "description": "SQL DataSource with Sequelize for Apollo GraphQL projects",
   "main": "index.js",
   "scripts": {
     "lint": "prettier '**/*.js' && eslint '**/*.js'",
@@ -31,14 +31,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cvburgess/SQLDataSource.git"
+    "url": "git+https://github.com/NicholasAnthony/apollo-datasource-sequelize.git"
   },
   "author": "Charles Burgess",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/cvburgess/SQLDataSource/issues"
+    "url": "https://github.com/NicholasAnthony/apollo-datasource-sequelize/issues"
   },
-  "homepage": "https://github.com/cvburgess/SQLDataSource#readme",
+  "homepage": "https://github.com/NicholasAnthony/apollo-datasource-sequelize#readme",
   "dependencies": {
     "apollo-datasource": "^0.6.3",
     "apollo-server-caching": "^0.5.0",
