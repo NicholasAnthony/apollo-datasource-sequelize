@@ -29,16 +29,17 @@
       "git add"
     ]
   },
+  "files": [],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/NicholasAnthony/apollo-datasource-sequelize.git"
+    "url": "git+https://github.com/nicholasanthony/apollo-datasource-sequelize.git"
   },
   "author": "Charles Burgess",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/NicholasAnthony/apollo-datasource-sequelize/issues"
+    "url": "https://github.com/nicholasanthony/apollo-datasource-sequelize/issues"
   },
-  "homepage": "https://github.com/NicholasAnthony/apollo-datasource-sequelize#readme",
+  "homepage": "https://github.com/nicholasanthony/apollo-datasource-sequelize#readme",
   "dependencies": {
     "apollo-datasource": "^0.6.3",
     "apollo-server-caching": "^0.5.0",
@@ -55,7 +56,7 @@
     "lint-staged": "^9.2.5",
     "pg": "^7.12.1",
     "prettier": "1.18.2",
-    "sequelize-cli": "^5.5.1",
+    "sequelize-cli": "^5.5.1"
   },
   "peerDependencies": {
     "graphql": "^14.0.2"
