@@ -1,6 +1,5 @@
-
 const { DataSource } = require("apollo-datasource");
-const Sequelize = require('sequelize');
+const Sequelize = require("sequelize");
 // if you want to load in config outside constructor
 // const config = require(`${__dirname}/../config/config.js`)[env];
 
@@ -12,7 +11,7 @@ const { DEBUG } = process.env;
 
 let hasLogger = false;
 
-class MYSQLDataSource extends DataSource {
+class SQLizeDataSource extends DataSource {
   constructor(sequelizeConfig) {
     super();
 
@@ -56,4 +55,4 @@ class MYSQLDataSource extends DataSource {
   // }
 }
 
-module.exports = { MYSQLDataSource };
+module.exports = { SQLizeDataSource };
